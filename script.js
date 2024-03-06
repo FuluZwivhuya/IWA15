@@ -8,32 +8,32 @@ const data = {
 
 // Only edit below
 
-const { lists:[
-[,a,b,c,d,e],
-[,as,bs,cs,ds,es,fs,gs],
-[,at,bt,ct]
-]}
-= data;
+const a = data.lists[0][1];//first line 
+const b = data.lists[1][1];//second line
+const c = data.lists[2][1];//third line
 
-const first = (a,b,c,d,e)
-const second = (as,bs,cs,ds,es,fs,gs)
-const third = (at,bt,ct)
-console.log(parseInt(at,bt,ct))
 
-const result = []
+const NewOne = a.concat(b,c);// created a new array with all arrays included
+console.log(NewOne)
 
-const extractBiggest = () => {
-	if (first[-1] > second[-1]) {
-		return first
+const { first = 1 } = data.first || {}
+const { second = 1 } = data.second || {}//not sure whats happening here, especially the first in = 1 in curly brackets
+const { third = 1 } = data.third || {}
+
+console.log(first)
+
+/*const extractBiggest = () => {
+	if (a[-1] > b[-1]) {
+		return a[-1]
 	}
 
-	if (third[-1] < 1) {
-		return second
+	if (c[-1] < b[-1]) {
+		return b[-1]
 	}
-	
-	return third
+
+	return c[-1]
 }
-
+const result = []
 // Only edit above
 
 result.push(extractBiggest())
@@ -54,4 +54,4 @@ result.push(extractBiggest())
 result.push(extractBiggest())
 result.push(extractBiggest())
 
-console.log(result)
+console.log(result)*/
